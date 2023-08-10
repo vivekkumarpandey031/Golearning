@@ -1,18 +1,18 @@
 package main
 
+import "fmt"
+
 
 
  
 
 func main() {
-
- 
-
-
-
-}
-type interface_name interface{
 	
+
+	
+
+
+
 }
-
-
+type geometry interface{
+	 
