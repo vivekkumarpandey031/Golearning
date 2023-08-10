@@ -1,0 +1,31 @@
+1 --> use fmt package function like Print , Println , Printf , and identify the differences
+2 --> write notes on tricolor garbage collector
+3 --> create constants and performs mathematical  calc on constants
+      Addition
+      Subtratction
+      Multiplications
+      Divisions
+      Modulus --> %
+
+4 --> create global variables and local variables in diffferent scopes and identify which variables values are taken outside of the scopes
+5 --> create variables of all numbeers types 
+      int
+      unit8
+      uint64 ..... etc
+      all 14 variables including 14 data types including runes and bytes and assign values of all variables
+
+      -- performs additions , multiplications and assign the reults to another variables      
+
+6 --> creates variables of all 14 types including rune , byte , and also take 2 interface{} types.
+     one assign int and the other one assign float32 values.
+     assign values to them and perform addition and multiplications , print the details.    
+
+7 --> State : Kartnatka , AP , Delhi , UP
+      Gender : M,F       
+      Age: >0
+      Height:
+                  Gender Height  Age   
+      Karnatka      F
+      AP
+      Delhi 
+      UP 

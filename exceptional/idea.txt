@@ -1,0 +1,38 @@
+what is graced termination of a process??
+
+explain briefly about panic ,fatal , exception
+
+
+
+
+
+Go slice remove element
+There is no built-in function to remove items from a slice. We can do the deletion with the append function.
+
+remove_elements.go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+
+    words := []string{"falcon", "bold", "bear", "sky", "cloud", "ocean"}
+    fmt.Println(words)
+
+    words = append(words[1:2], words[2:]...)
+    fmt.Println(words)
+
+    words = append(words[:2], words[4:]...)
+    fmt.Println(words)
+}
+In the code example, we delete an element and then two elements from the slice.
+
+words = append(words[1:2], words[2:]...)
+This removes the first element from the slice. We accomplish the removal by appending two slices omitting the one to be deleted.
+
+$ go run remove_elements.go
+[falcon bold bear sky cloud ocean]
+[bold bear sky cloud ocean]
+[bold bear ocean]
