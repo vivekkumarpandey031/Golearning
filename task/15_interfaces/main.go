@@ -22,10 +22,17 @@ func (c circle) perim() float64{
 	return 2*math.Pi*c.raidus
 }
 
+func measure(g geometry)  {
+	fmt.Println(g.area())
+	fmt.Println(g.perim())
+
+}
+
 func main(){
 	c1:=circle{raidus: 3}
 
-	fmt.Println(c1.area())
-	fmt.Println(c1.perim())
+	// fmt.Println(c1.area())
+	// fmt.Println(c1.perim())
+	measure(c1)
 
 }
