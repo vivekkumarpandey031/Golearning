@@ -74,7 +74,7 @@ if err != nil {
 
 defer f.Close()
 
-if _, err = f.WriteString("data has been read by me, %\n"); err != nil {
+if _, err = f.WriteString("data has been read by me.  "); err != nil {
     panic(err)
 }
 }else{
