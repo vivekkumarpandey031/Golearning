@@ -20,7 +20,7 @@ func getBig_getSmall(slice1 []int) (int, int) {
 }
 func main() {
 
-	var arr = []int{1, 2, 3, 4, 5, 6, 7, 8,9}
+	var arr = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
 	slice1 := arr[:]
 	fmt.Println(slice1)
 	ln, sn := getBig_getSmall(slice1)
