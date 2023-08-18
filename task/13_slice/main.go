@@ -14,27 +14,32 @@ func getBig_getSmall(slice1 []int) (int, int) {
 	ssn := sn-1
 	//fmt.Println(sn)
 	 for i:=0;i<len(slice1);i++ {
-		//fmt.Println(sn)
-		if slice1[i] > ln {
-
-			sln=ln
+		// second largest numbers
+		if slice1[i] > ln{
+			sln = ln
 			ln = slice1[i]
-			//fmt.Println(ln," ",sln)
+
+		}else if slice1[i] > sln{
+			sln = slice1[i]
 		}
-		//fmt.Println(sn)
+	// second smallest number
 		if slice1[len(slice1)-i-1] < sn {
 			ssn =sn
 			sn = slice1[len(slice1)-i-1]
 			
+
+		}else if slice1[len(slice1)-i-1] < ssn{
+			ssn=slice1[len(slice1)-i-1]
+			
 		}
-		//fmt.Println(slice1[len(slice1)-i-1])
+		//fmt.Println(sln,"     ",ln)
 	}
 	return sln, ssn
 
 }
 func main() {
 
-	var arr = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var arr = []int{2,1,3,6,5}
 	slice1 := arr[:]
 	fmt.Println(slice1)
 	sln, ssn := getBig_getSmall(slice1)
