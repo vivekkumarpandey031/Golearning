@@ -25,7 +25,7 @@ func getBig_getSmall(slice1 []int) (int, int) {
 	// second smallest number
 		if slice1[len(slice1)-i-1] < sn {
 			ssn =sn
-			sn = slice1[len(slice1)-i-1]
+			sn = slice1[len(slice1)-i-1] 
 			
 
 		}else if slice1[len(slice1)-i-1] < ssn{
