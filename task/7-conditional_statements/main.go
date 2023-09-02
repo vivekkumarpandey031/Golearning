@@ -27,19 +27,17 @@ func main() {
 }
 
 func Check_Ticket(state string, gender string, height int, age int) {
-	if state == "Karnataka" && gender == "F" {
+	if state == "Karnataka" && gender == "F" || state == "Delhi" && gender == "F" {
 		fmt.Println("No ticket")
 	} else if state == "AP" && gender == "F" && height <= 110 && age <= 5 {
 		fmt.Println("No ticket")
-	} else if state == "Delhi" && gender == "F" {
-		fmt.Println("No ticket")
 	} else if state == "UP" && gender == "F" && height <= 120 && age <= 6 {
 		fmt.Println("No ticket")
-	} else if state == "Karnataka" && gender == "M" && height <= 110 && age <= 5 {
+	} else if state == "Karnataka"  && height <= 110 && age <= 5 {
 		fmt.Println("No ticket")
 	} else if state == "AP" && gender == "M" && height <= 110 && age <= 5 {
 		fmt.Println("No ticket")
-	} else if state == "Delhi" && gender == "M" && height <= 130 && age <= 7 {
+	} else if state == "Delhi"  && height <= 130 && age <= 7 {
 		fmt.Println("No ticket")
 	} else if state == "UP" && gender == "M" && height <= 120 && age <= 6 {
 		fmt.Println("No ticket")
