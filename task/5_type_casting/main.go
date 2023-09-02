@@ -6,6 +6,8 @@ func main(){
    task5()
 }
 
+//good 
+
 func task5() {
  // variable declared
 	var (
